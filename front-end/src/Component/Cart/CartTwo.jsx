@@ -1,7 +1,6 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { AddCart } from '../../Redux/Action'
-import { Add_To_Wish } from '../../Redux/Action'
+import { Add_To_Wish } from '../../Redux/Action/'
 const CartTwo = (props) => {
     const { name, star, price, img, CartImg, Stock, brand, Sold, setShow, Discount } = props
     const SellPrice = Math.floor(price - (price / 100) * Discount);

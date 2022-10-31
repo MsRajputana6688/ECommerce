@@ -36,7 +36,7 @@ const CheckOut = () => {
                         </div>
                         <div className="cart-total mt-10">
                             <div className="n-total"></div>
-                            <div className="t-Price" style={{ 'fontSize': '22px' }}>${totalAmount + 40}</div>
+                            <div className="t-Price" style={{ 'fontSize': '22px' }}>${totalAmount + totalAmount ? 40 : 0}</div>
                         </div>
 
                         {/* voucher */}

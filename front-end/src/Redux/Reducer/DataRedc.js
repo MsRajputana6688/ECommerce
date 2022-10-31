@@ -1,10 +1,22 @@
 import Prodect from "../DataBase/Prodect"
+const Totalamt = () => {
+    const list = JSON.parse(localStorage.getItem('AddToCart'))
+    const total = list ? list.reduce((accum, carElem) => {
+        let { Amount, price, Discount } = carElem;
+        accum.total += Amount * Math.floor(price - (price / 100) * Discount);
+        return accum
+    }, { total: 0 }) : 0;
+    return total.total
+}
+Totalamt();
+
+
 const initialStates = {
     item: Prodect,
     DisPrice: 0,
     AddToCart: JSON.parse(localStorage.getItem('AddToCart')),
-    totalAmount: 0,  // total Amount of product
-    totalItem: 0, // total  product
+    totalAmount: Totalamt(),
+    totalItem: JSON.parse(localStorage.getItem('AddToCart')).length, // total  product
 }
 
 // get total price Amount and Prodect Amount 
