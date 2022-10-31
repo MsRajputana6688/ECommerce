@@ -1,0 +1,45 @@
+.relative-container {
+    min-width: 100%;
+    position: relative;
+}
+
+.Big_Discount {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+.Big_Discount::-webkit-scrollbar {
+    height: 0px;
+    width: 0px;
+}
+
+.BigDis_Scroll {
+    display: flex;
+    align-items: center;
+}
+
+.dis-cart {
+    min-width: 16.66%;
+    background: none;
+    padding: 10px;
+}
+
+.cart-range {
+    width: 100%;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    padding: 16px;
+}
+
+@media (max-width:948px) {
+    .dis-cart {
+        min-width: 25%;
+    }
+}
+@media (max-width:648px) {
+    .dis-cart {
+        min-width: 50%;
+    }
+}

@@ -1,0 +1,153 @@
+.TopRating {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.col-top {
+    width: 49%;
+    margin: 10px 0px;
+}
+
+.col-top-heading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.col-heading {
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.col-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+}
+
+.col-name {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 1;
+    color: #2b3445;
+}
+
+/* Top Rating Cart  */
+.TopRateCart {
+    width: 100%;
+    min-height: 230px;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    border-radius: 8px;
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+/* cart  */
+/* .Top-Rate-cart { */
+/* background: red; */
+/* } */
+
+.rate-cart-img {
+    width: 100%;
+    min-height: 120px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(135deg, #eff3f4, #d5dddf);
+}
+
+.cart-top-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    z-index: 10;
+}
+
+.cart-top-link:hover {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+
+.img {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.img img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.2);
+    transition: all 0.2s linear;
+}
+
+.cart-top-link:hover~.img img {
+    transform: scale(1.4);
+}
+
+.top-cart-info {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-cart-info .rate {
+    margin: 10px 0px 6px;
+    height: 17px;
+}
+
+.top-cart-info .Name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+}
+
+.top-cart-info .price {
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(233, 69, 96);
+}
+
+
+@media (max-width:1030px) {
+    .TopRating {
+        flex-direction: column;
+    }
+
+    .col-top {
+        width: 100%;
+    }
+
+    .TopRateCart {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:768px) {
+    .TopRateCart {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}

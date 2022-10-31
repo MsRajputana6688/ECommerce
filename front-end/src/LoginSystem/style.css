@@ -1,0 +1,220 @@
+.userContant {
+    width: 100%;
+    height: 100vh;
+    background: rgba(00, 0, 0, 0.3);
+    position: fixed;
+    top: 0px;
+    z-index: 10000;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.UserData {
+    width: 530px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
+}
+
+.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background: none;
+    outline: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-fild {
+    width: 100%;
+    height: auto;
+    padding: 30px 60px;
+}
+
+.form-fil span {
+    color: #e94560;
+    font-size: 12px;
+    /* margin-top: 3px; */
+    /* margin-left: 3px; */
+}
+
+.form-heading {
+    font-size: 20px;
+    text-align: center;
+}
+
+.form-tel {
+    text-align: center;
+    font-size: 13px;
+    padding: 4px 0px;
+    color: #373f50;
+}
+
+.form-fil {
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.form-fil label {
+    font-size: 14px;
+    font-weight: 100;
+    color: #444953;
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.form-fil input {
+    width: 100%;
+    height: 40px;
+    display: block;
+    border-radius: 4px;
+    border: 1px solid #dae1e7;
+    outline: none;
+    padding: 0px 10px;
+}
+
+.form-fil input:focus {
+    border-color: #e94560;
+}
+
+.form-fil input:hover {
+    border-color: #adb2b7;
+}
+
+.form-footer {
+    padding: 30px;
+    background: #f3f5f9;
+}
+
+#submit {
+    width: 100%;
+    height: 40px;
+    background: #e94560;
+    color: #fff;
+    font-size: 20px;
+    border: #e94560 1px solid;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.form-logup,
+.form-footer {
+    font-size: 14px;
+    color: #7d879c;
+    text-align: center;
+    padding: 10px 0px;
+}
+
+.form-logup a,
+.form-footer a {
+    color: rgba(0, 0, 0, 0.832);
+    text-decoration: underline;
+}
+
+/* msg */
+.msg {
+    padding: 20px;
+    padding-top: 40px;
+    text-align: center;
+}
+
+/* userContant */
+.useInterSide {
+    padding: 30px;
+}
+
+.cityCart {
+    width: 100%;
+    height: 130px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.userCart {
+    width: 100%;
+    /* height: 130px; */
+    /* box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px; */
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.weather_info {
+    padding-left: 20px;
+}
+
+.temp {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.temp sup {
+    padding-right: 5px;
+}
+
+.place {
+    font-size: 16px;
+    color: #444953;
+}
+
+.user {
+    display: flex;
+    font-size: 25px;
+}
+
+.cont {
+    font-size: 16px;
+    margin-top: 5px;
+    padding-left: 15px;
+    letter-spacing: 1px;
+}
+
+.weather_icon {
+    height: 100%;
+    width: 70%;
+    background: linear-gradient(90deg, transparent, rgba(249, 179, 31, 0.3));
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 20px;
+}
+
+.wea-icon {
+    width: 100px;
+    height: 100px;
+}
+
+.weather_icon img {
+    height: 100%;
+    width: 100%;
+}
+.dec{
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    color: #7d879c;
+}
+
+@media (max-width:540px) {
+    .UserData {
+        width: 90%;
+    }
+
+    .form-fild {
+        width: 100%;
+    }
+}

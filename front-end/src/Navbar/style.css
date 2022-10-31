@@ -1,0 +1,358 @@
+nav {
+    width: 100%;
+    height: 60px;
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+    position: relative;
+    z-index: 10;
+    background: #fff;
+}
+
+.Navbar {
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.category {
+    height: 40px;
+    background: #f6f9fc;
+    /* width: 200px; */
+    border-radius: 6px;
+    transition: all 150ms ease-in-out 0s;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 0px 20px;
+}
+
+.category:active {
+    box-shadow: 1px 1px 4px 0px rgba(43, 52, 69, 0.102);
+}
+
+span.cat-icon {
+    width: 22px;
+    height: 22px;
+}
+
+span.cat-text {
+    color: #7d879c;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+span.arrow-d {
+    width: 15px;
+    padding-top: 6px;
+}
+
+.nav {
+    display: flex;
+    height: 100%;
+}
+
+.nav-item {
+    margin-left: 30px;
+    position: relative;
+    padding-top: 10px;
+    /* background: black; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    color: #24282f;
+    font-size: 14px;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-link:hover {
+    color: #e94560;
+}
+
+.nav-sub-item {
+    display: none;
+    position: absolute;
+    height: auto;
+    width: 220px;
+    background: #fff;
+    left: 0px;
+    top: 100%;
+    border-radius: 6px;
+    box-shadow: 0px 0px 18px 0px rgba(43, 52, 69, 0.06);
+    transform: translateY(20px);
+    transition: all 0.3s linear;
+    padding: 8px 0px;
+}
+
+.nav-item:hover .nav-sub-item {
+    transform: translateY(0px);
+    display: block;
+}
+
+.nav-sub-menu {
+    height: 35px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav-sub-menu:hover {
+    background: #f6f9fc;
+}
+
+.nav-sub-menu .link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+.nav-sub-menu span,
+.nav-sub-menu a {
+    font-size: 14px;
+    color: #24282f;
+    display: block;
+    text-transform: capitalize;
+}
+
+.nav-sub-menu svg {
+    width: 0px;
+}
+
+.nav-sub-menu:hover svg {
+    width: 14px;
+}
+
+.nav-sub-menu:hover>span,
+.nav-sub-menu .link:hover span,
+.nav-sub-menu .link:hover a {
+    color: #e94560;
+}
+
+.nav-sub-menu .link:hover svg {
+    fill: #e94560;
+    stroke: #e94560
+}
+
+.nav-sub-item-menu {
+    border-radius: 6px;
+    position: absolute;
+    width: 200px;
+    height: auto;
+    left: 100%;
+    top: 0px;
+    padding: 0px 12px;
+    display: none;
+}
+
+.nav-sub-item-list {
+    border-radius: 6px;
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 18px 0px rgba(43, 52, 69, 0.02);
+    padding: 10px 0px;
+}
+
+.nav-sub-item-list a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #24282f;
+    text-transform: capitalize;
+}
+
+.nav-sub-item-list a:hover {
+    background: #f6f9fc;
+    color: #e94560;
+}
+
+.nav-sub-menu:hover .nav-sub-item-menu {
+    display: block;
+}
+
+@media (max-width:1199px) {
+    .Navbar {
+        padding: 0px 10px;
+    }
+}
+
+@media (max-width:900px) {
+    nav {
+        display: none;
+    }
+}
+
+
+
+
+/* NavCategory */
+.NavCategory {
+    position: absolute;
+    top: 100%;
+    padding: 4px 0px;
+    width: 260px;
+}
+
+.nav-cat-catainer {
+    background: #fff;
+    width: 100%;
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+    border-radius: 6px;
+    padding: 8px 0px;
+}
+
+.nav-cat-main {
+    height: 40px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.nav-cat-parent {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    /* background: #e9eef7; */
+}
+
+.nav-cat-parent:hover {
+    background: #e9eef7;
+}
+
+.nav-cat-item {
+    display: flex;
+    align-items: center;
+}
+
+.nav-cat-logo {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.nav-cat-name {
+    font-size: 16px;
+}
+
+/* arrow icon :nav-cat-parent-icon */
+.nav-cat-parent-icon {
+    width: 20px;
+    padding-top: 4px;
+    display: none;
+}
+
+.nav-cat-parent:hover .nav-cat-parent-icon {
+    display: block;
+}
+
+/* child  */
+.nav-cat-child {
+    display: none;
+    /* display: block; */
+    width: 500px;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    padding: 10px 6px;
+}
+
+.nav-cat-main:hover .nav-cat-child {
+    display: block;
+}
+
+.nav-cat-childs {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: rgb(43 52 69 / 10%) 0px 4px 16px;
+    /* box-shadow: 0px 0px 18px 0px rgba(43, 52, 69, 0.02); */
+    /* display: flex;
+    justify-content: space-between;
+    align-items: flex-start; */
+    padding: 6px 0px;
+    position: relative;
+
+}
+
+
+.nav-child-cat {
+    width: 100%;
+    height: 100%;
+}
+
+.nav-child-item {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    display: none;
+    top: 0px;
+    padding: 6px 0px;
+}
+
+.nav-child-cat:hover .nav-child-item {
+    display: block;
+}
+
+.nav-child-cat-name {
+    width: 50%;
+    height: 36px;
+    padding: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-right: 1px solid rgba(0, 0, 99, 0.09);
+}
+
+.nav-child-cat-name:hover {
+    background: #e9eef7;
+}
+
+.nav-child-cat-name span {
+    display: inline-block;
+}
+
+.nav-child-cat-name span.name {
+    font-size: 15px;
+}
+
+.nav-child-cat-name .icon {
+    width: 18px;
+    padding-top: 6px;
+    display: none;
+}
+
+.nav-child-cat-name:hover .icon {
+    display: block;
+}
+
+.nav-child-item-name {
+    height: 36px;
+    width: 100%;
+    line-height: 36px;
+    font-size: 15px;
+    padding: 0px 10px;
+    color: #000;
+}
+
+.nav-child-item-name:hover {
+    background: #e9eef7be;
+}
