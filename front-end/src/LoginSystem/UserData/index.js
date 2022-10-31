@@ -36,6 +36,7 @@ const UserData = ({ setFromState }) => {
                         </div>
                         <div className="weather_icon">
                             <div className="wea-icon">
+                                {console.log(city.weather[0].id + city.weather[0].icon)}
                                 <img src={`./Assets/weather/${city.weather[0].id}${city.weather[0].icon}.png`} alt="" />
                             </div>
                             <div className="dec">

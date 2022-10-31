@@ -23,7 +23,7 @@ const Prodect_main = ({ Location }) => {
                         <img src={CartImg} alt="" />
                     </div>
                 </div>
-            </div>  
+            </div>
             <div className="Prodect_main_div">
                 <div className="MP_name"> {name}</div>
                 <div className="MP_brand">Brand : <span>{brand}</span></div>
