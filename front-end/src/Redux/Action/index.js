@@ -64,4 +64,12 @@ export const Add_To_Wish = (event) => {
         type: 'ADD_TO_WISH',
         payload: event,
     }
-} 
+}
+
+// toggle page etc 
+export const Page_Aside_Toggle = (event) => {
+    return {
+        type: 'ASIDE_PAGE_TOGGLE',
+        payload: event
+    }
+}

@@ -40,7 +40,7 @@ export const BottemNav = () => {
 
                 {/* cart  */}
                 <div className="card-btn">
-                    <NavLink to='./AddToCart'>
+                    <NavLink to='./Cart'>
                         <button type='button'>
                             <div id="cart">
                                 <svg xmlns="http://www.w3.org/2000/svg" className="ionicon" viewBox="0 0 512 512">

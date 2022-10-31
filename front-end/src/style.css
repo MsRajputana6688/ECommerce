@@ -582,6 +582,7 @@ button.cart-voucher-field:hover,
     .cart-section {
         width: 100%;
     }
+
 }
 
 @media (max-width:425px) {
@@ -604,14 +605,18 @@ button.cart-voucher-field:hover,
 }
 
 .TrackList {
-    width: 300px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
-    padding: 20px 0px;
     position: absolute;
-    left: 0px;
     top: 0px;
+    left: 0px;
+    width: 300px;
+    box-shadow: rgb(3 0 71 / 9%) 0px 1px 3px;
+    background: #fff;
+    padding: 20px 0px;
+    border-radius: 10px;
+}
+
+#TrackList {
+    width: 100%;
 }
 
 .D-container {
@@ -622,6 +627,7 @@ button.cart-voucher-field:hover,
 .D-heading {
     height: 25px;
     display: flex;
+    justify-content: space-between;
 }
 
 .D-heading .icon {
@@ -631,7 +637,18 @@ button.cart-voucher-field:hover,
 .D-heading {
     font-size: 25px;
     line-height: 1;
-    font-weight:bold;
+    font-weight: bold;
+}
+
+.dl-head {
+    display: flex;
+    align-items: center;
+}
+
+.dr-head {
+    width: 30px;
+    height: 30px;
+    display: none;
 }
 
 .TrackList-header {
@@ -701,4 +718,42 @@ button.cart-voucher-field:hover,
 .Dashboard-list-link:hover .menu-name,
 .Dashboard-list-link:hover .Dashboard-menu-count {
     color: #e94560;
+}
+
+@media (max-width:1024px) {
+    .TrackList {
+        width: 0px;
+        position: fixed;
+        background: rgba(0, 0, 0, 0.4);
+        height: 100vh;
+        z-index: 111;
+        padding: 0px;
+        overflow: hidden;
+        border-radius: 0px;
+    }
+
+    .TrackList.active {
+        width: 100%;
+    }
+
+    #trackList {
+        transition: all 0.15s linear;
+        padding: 30px 0px;
+        height: 100%;
+        width: 0px;
+        overflow: hidden;
+        background: #fff;
+    }
+
+    .TrackList.active #trackList {
+        width: 280px;
+    }
+
+    .D-container {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .dr-head {
+        display: block;
+    }
 }

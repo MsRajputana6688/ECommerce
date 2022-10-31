@@ -27,7 +27,7 @@ const Navbar = () => {
                             </svg>
                         </span>
                     </div>
-                    {/* {active ? <NavCategory /> : ""} */}
+                    {active ? <NavCategory /> : ""}
                 </div>
                 <div className="nav">
                     {

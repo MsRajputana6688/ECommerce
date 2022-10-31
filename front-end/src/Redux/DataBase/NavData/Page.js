@@ -36,31 +36,31 @@ const Page = [
             {
                 id: 1,
                 name: 'Order',
-                target: ['Order-list', 'Order-Detaile'],
+                target: ['Orders', 'Order-Detaile'],
                 link: ['Order list', 'Order Detaile']
             },
             {
                 id: 2,
                 name: 'Profile',
-                target: ['View-Profile', 'Edit-Profile'],
+                target: ['Profile', 'Edit-Profile'],
                 link: ['View Profile', 'Edit Profile']
             },
             {
                 id: 3,
                 name: 'Address',
-                target: ['Add-Address', 'Address-List'],
+                target: ['Addresses', 'Address-List'],
                 link: ['Add Address', 'Address List']
             },
             {
                 id: 4,
                 name: 'Support Tickets',
-                target: ['All-Tickets', 'Tickets-Detaile'],
+                target: ['Support', 'Tickets-Detaile'],
                 link: ['All Tickets', 'Tickets Detaile']
             },
             {
                 id: 5,
                 name: 'AddToCart',
-                target: 'AddToCart',
+                target: 'Cart',
             },
         ]
     },

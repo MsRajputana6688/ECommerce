@@ -1,9 +1,5 @@
 const initialStates = {
     AddToCart: JSON.parse(localStorage.getItem('AddToWish')),
-    // item: Prodect,
-    // DisPrice: 0,
-    // totalAmount: 0,  // total Amount of product
-    // totalItem: 0, // total  product
 }
 
 const AddToWish = (state = initialStates, action) => {

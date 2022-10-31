@@ -1,14 +1,21 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
 import { NavLink } from 'react-router-dom'
-
+import { Page_Aside_Toggle } from '../Redux/Action/'
 const AddressList = () => {
+    const Dispatch = useDispatch()
     return (
         <div className='D-container'>
             <div className="D-heading">
-                <div className="icon">
-                    <img src="./Assets/svg/Cart2.svg" alt="" className='svg-height' />
+                <div className="dl-head">
+                    <div className="icon">
+                        <img src="./Assets/svg/location1.svg" alt="" className='svg-height' />
+                    </div>
+                    <div className='pl-10'>Address</div>
                 </div>
-                <div className='pl-10'>My Orders</div>
+                <button onClick={() => Dispatch(Page_Aside_Toggle(true))} className="dr-head">
+                    <img src="./Assets/svg/toggle.svg" alt="" className='svg-height' />
+                </button>
             </div>
             <div className='table order-table mt-20 pt-10'>
                 <div className='thead'>
